@@ -1,0 +1,63 @@
+.calendar-body {
+  height: 100%;
+  color: #798999;
+  background: #f7f8fa;
+
+  &-current-month {
+    color: black;
+    background: white;
+    cursor: pointer;
+  }
+
+  &-current-day {
+    background: #7bdcfe;
+
+    span {
+      border-radius: 5px;
+    }
+  }
+
+  &-week {
+    &-label {
+      font-weight: bold;
+      display: flex;
+      background: white;
+      color: #7bdcfe;
+      height: 70px;
+      line-height: 70px;
+      border-left: 1px solid #e3ecf3;
+
+      &-day {
+        text-align: left;
+        text-indent: 20px;
+        width: 20%;
+        border-right: 1px solid #e3ecf3;
+        border-bottom: 1px solid #e3ecf3;
+      }
+    }
+  }
+
+  &-month {
+    height: calc(100% - 68px);
+    display: flex;
+    flex-direction: column;
+    &-week {
+      flex: 1;
+      display: flex;
+      border-left: 1px solid #e3ecf3;
+      &-day {
+        text-align: left;
+        text-indent: 20px;
+        width: 20%;
+        height: 100%;
+        line-height: 50px;
+        border-right: 1px solid #e3ecf3;
+        border-bottom: 2px solid #e3ecf3;
+      }
+    }
+  }
+
+  .red-font {
+    color: red;
+  }
+}
